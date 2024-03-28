@@ -15,7 +15,7 @@
   - Because mod no loger changes recipes, concrete recipe is no longer broken (sorry for this terrible bug)
 
 
-# Version 0.1.1 [unknown]
+# Version 0.1.1 [date unknown]
 
 ### Fixes:
   - Added missing thumbnail.png file
