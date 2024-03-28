@@ -3,4 +3,5 @@ Changes Factorio changelog.txt to one that will look good on Github. You can che
 
 
 # Usage
-All you need to do is to place the changelog-parser.py in the same folder as your changelog.txt and run the script. Dont double-click the file, run in from command prompt instead.
+All you need to do is to place the changelog-parser.py in the same folder as your changelog.txt and run the script. MAKE SURE YOU HAVE PYTHON INSTALLED!!! Dont double-click the file, it won't work, run it from command prompt.
+### python changelog-parser.py
