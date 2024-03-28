@@ -1,5 +1,5 @@
 # FactorioChangelogParser
-Changes Factorio changelog.txt to one that will look good on Github
+Changes Factorio changelog.txt to one that will look good on Github. You can check the example files to see the difference by yourself!
 
 
 # Usage
