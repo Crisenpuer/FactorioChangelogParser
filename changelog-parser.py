@@ -28,7 +28,7 @@ else:
         else:
             if len(changelog_out) == 0 and entry.startswith("Version:"):
                 formatted_line = entry.replace(':','')
-                print(f'Parsing {(formatted_line.lower()).replace('  ', ' ')}')
+                print(f'Parsing {(formatted_line.lower()).replace("  ", " ")}')
                 versions_parsed += 1
                 changelog_out.append(f'# {formatted_line} ')
                 if not 'Date:' in changelog_in[i+1]:
@@ -50,7 +50,7 @@ else:
                 changelog_out.append(f'[{formatted_line}]\n')
 
             elif entry.startswith('  ') and entry.endswith(':'):
-                changelog_out.append(f'\n### {entry.lstrip('  ')}\n')
+                changelog_out.append(f'\n### {entry.lstrip("  ")}\n')
 
             elif entry.startswith('    - '):
                 formatted_line = entry.replace('    ', '  ')
