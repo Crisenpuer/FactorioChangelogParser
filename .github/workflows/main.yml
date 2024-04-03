@@ -1,0 +1,43 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to the branch you want to trigger the workflow on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Specify the Python version you need
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # If you have any dependencies for your script
+      
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v1.0.0  # Specify the tag version for your release
+        release_name: Release 1.0.0  # Specify the release name
+        body: |  # Optionally provide a description for your release
+          This is the first release.
+        
+    - name: Upload Python file as asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./changelog-parser.py  # Specify the path to your Python file
+        asset_name: changelog-parser.py  # Specify the name for the asset
+        asset_content_type: text/plain  # Adjust content type if needed
