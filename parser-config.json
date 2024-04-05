@@ -1,0 +1,29 @@
+{
+    "force_default_values_comment":"You fucked up this json file and the changelog looks like dogshit? No worries, if you set this value to 'yes' parser will use _default_value values. You changed default values and you changelog still looks like dogshit? Use 'Lord Crisenpuer, I beg you to use default values' to force using the default values I hard-coded into parser's script",
+    "force_default_values_default_value":"no",
+    "force_default_values":"no",
+
+    "input_path_comment":"Here you put path to your input changelog file ex. C:/absolute/path/to/changelog.txt ; relative/path/to/changelog.txt ; you can use / or \\",
+    "input_path_default_value":"changelog.txt",
+    "input_path":"changelog.txt",
+
+    "output_path_comment":"Here you put path to your output changelog file ex. C:/absolute/path/to/CHANGELOG.md ; CHANGELOG.md ; you can use / or \\",
+    "output_path_default_value":"CHANGELOG.md",
+    "output_path":"CHANGELOG.md",
+
+    "version_range_comment":"Versions that will be parsed, avalible options are: all, latest, X.X.X_X.X.X",
+    "version_range_default_value":"all",
+    "version_range":"all",
+
+    "version_header_style_comment":"Version header style, check examples folder to see how different styles look. Avalible options are: title, subtitle, subsubtitle",
+    "version_header_style_default_value":"title",
+    "version_header_style":"title",
+
+    "date_header_style_comment":"Date header style, check examples folder to see how different styles look. Avalible options are: sameline, subtitle, subsubtitle",
+    "date_header_style_default_value":"sameline",
+    "date_header_style":"sameline",
+
+    "changes_format_comment":"Changes format style, check examples folder to see how different styles look. Avalible options are: subtitle-subsubtitle, subtitle-list, subsubtitle-list, list-sublist",
+    "changes_format_default_value":"subtitle-list",
+    "changes_format":"subtitle-list"
+}
